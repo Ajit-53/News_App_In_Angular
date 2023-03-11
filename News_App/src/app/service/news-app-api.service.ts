@@ -11,7 +11,18 @@ export class NewsAppApiService {
 
   //api url 
   private readonly topHeadlineNews = '';
+  //api Tech
+  private readonly tech = '';
+  // api Business
+  private readonly Business = '';
+
   public HeadLinenews(): Observable<any>{
     return this._http.get(this.topHeadlineNews);
+  }
+  public Technews(): Observable<any>{
+    return this._http.get(this.tech);
+  }
+  public BusinessNews(): Observable<any>{
+    return this._http.get(this.Business);
   }
 }

@@ -5,12 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopheadlineComponent } from './topheadline/topheadline.component';
 import {HttpClientModule} from '@angular/common/http';
-import {NewsAppApiService} from './service/news-app-api.service'
+import {NewsAppApiService} from './service/news-app-api.service';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { TechComponent } from './tech/tech.component';
+import { BusinessComponent } from './business/business.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopheadlineComponent
+    TopheadlineComponent,
+    NavbarComponent,
+    FooterComponent,
+    TechComponent,
+    BusinessComponent
   ],
   imports: [
     BrowserModule,
